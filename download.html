@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Download Indila - Dernière Danse (HQ MP3) | Cartunes</title>
+    <meta name="description" content="Download Indila - Dernière Danse in studio-quality MP3. Lyrics, song details, and instant download.">
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "MusicRecording",
+      "name": "Dernière Danse",
+      "byArtist": "Indila",
+      "duration": "PT3M33S",
+      "genre": "French Pop",
+      "datePublished": "2013-12-13",
+      "image": "https://i.ytimg.com/vi/K5KAc5CoCuk/maxresdefault.jpg",
+      "audio": {
+        "@type": "AudioObject",
+        "contentUrl": "Derniere-Danse.mp3",
+        "encodingFormat": "audio/mp3"
+      }
+    }
+    </script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --primary: #6C5CE7;
+            --secondary: #FD79A8;
+            --dark: #0F0F13;
+            --light: #FFFFFF;
+            --text: #B8B8C5;
+            --card-bg: rgba(30, 30, 42, 0.7);
+            --glass-border: rgba(255, 255, 255, 0.1);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', -apple-system, BlinkMacSystemFont, sans-serif;
+        }
+
+        body {
+            background-color: var(--dark);
+            color: var(--light);
+            min-height: 100vh;
+            background: 
+                radial-gradient(circle at 20% 30%, rgba(108, 92, 231, 0.15) 0%, transparent 50%),
+                radial-gradient(circle at 80% 70%, rgba(253, 121, 168, 0.15) 0%, transparent 50%),
+                linear-gradient(to bottom, #0F0F13, #1A1A24);
+            background-attachment: fixed;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 40px;
+        }
+
+        .song-card {
+            background: var(--card-bg);
+            border-radius: 24px;
+            padding: 40px;
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            border: 1px solid var(--glass-border);
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.4);
+            margin-bottom: 40px;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .song-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
+        }
+
+        .song-header {
+            display: flex;
+            gap: 40px;
+            margin-bottom: 30px;
+        }
+
+        .song-cover {
+            width: 250px;
+            height: 250px;
+            border-radius: 16px;
+            object-fit: cover;
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.4);
+            flex-shrink: 0;
+            border: 1px solid var(--glass-border);
+        }
+
+        .song-info {
+            flex: 1;
+        }
+
+        .song-title {
+            font-size: 36px;
+            font-weight: 700;
+            margin-bottom: 10px;
+            background: linear-gradient(45deg, var(--primary), var(--secondary));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            line-height: 1.2;
+        }
+
+        .song-artist {
+            font-size: 22px;
+            color: var(--light);
+            margin-bottom: 20px;
+            font-weight: 500;
+        }
+
+        .song-meta {
+            display: flex;
+            gap: 25px;
+            margin-bottom: 25px;
+            flex-wrap: wrap;
+        }
+
+        .meta-item {
+            display: flex;
+            align-items: center;
+            color: var(--text);
+            font-size: 16px;
+        }
+
+        .meta-item i {
+            margin-right: 8px;
+            color: var(--primary);
+            font-size: 18px;
+        }
+
+        .audio-preview {
+            width: 100%;
+            margin-bottom: 30px;
+            background: rgba(40, 40, 55, 0.6);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            border-radius: 12px;
+            padding: 20px;
+            border: 1px solid var(--glass-border);
+        }
+
+        audio {
+            width: 100%;
+            outline: none;
+        }
+
+        audio::-webkit-media-controls-panel {
+            background: linear-gradient(to right, var(--primary), var(--secondary));
+            border-radius: 8px;
+        }
+
+        audio::-webkit-media-controls-play-button,
+        audio::-webkit-media-controls-mute-button {
+            background-color: rgba(0, 0, 0, 0.3);
+            border-radius: 50%;
+        }
+
+        .download-btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            background: linear-gradient(45deg, var(--primary), var(--secondary));
+            color: white;
+            text-decoration: none;
+            padding: 16px 30px;
+            border-radius: 12px;
+            font-weight: 600;
+            font-size: 18px;
+            transition: all 0.3s;
+            border: none;
+            cursor: pointer;
+            box-shadow: 0 5px 15px rgba(108, 92, 231, 0.3);
+        }
+
+        .download-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 25px rgba(108, 92, 231, 0.4);
+        }
+
+        .song-details {
+            margin-top: 40px;
+        }
+
+        .details-title {
+            font-size: 24px;
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .details-title i {
+            color: var(--primary);
+        }
+
+        .details-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .detail-item {
+            margin-bottom: 15px;
+        }
+
+        .detail-label {
+            color: var(--text);
+            font-size: 14px;
+            margin-bottom: 5px;
+        }
+
+        .detail-value {
+            font-size: 16px;
+            font-weight: 500;
+        }
+
+        .lyrics-section {
+            margin-top: 40px;
+        }
+
+        .lyrics-title {
+            font-size: 24px;
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .lyrics-title i {
+            color: var(--primary);
+        }
+
+        .lyrics-content {
+            background: rgba(40, 40, 55, 0.6);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            border-radius: 12px;
+            padding: 30px;
+            white-space: pre-line;
+            line-height: 1.8;
+            font-size: 16px;
+            border: 1px solid var(--glass-border);
+        }
+
+        footer {
+            text-align: center;
+            padding: 30px 0;
+            color: var(--text);
+            font-size: 14px;
+        }
+
+        @media (max-width: 992px) {
+            .container {
+                padding: 30px;
+            }
+            
+            .song-header {
+                gap: 30px;
+            }
+            
+            .song-cover {
+                width: 200px;
+                height: 200px;
+            }
+            
+            .song-title {
+                font-size: 30px;
+            }
+            
+            .song-artist {
+                font-size: 20px;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .song-header {
+                flex-direction: column;
+            }
+            
+            .song-cover {
+                width: 100%;
+                max-width: 300px;
+                margin: 0 auto 20px;
+            }
+            
+            .song-title {
+                font-size: 28px;
+                text-align: center;
+            }
+            
+            .song-artist {
+                text-align: center;
+                font-size: 18px;
+            }
+            
+            .song-meta {
+                justify-content: center;
+            }
+            
+            .download-btn {
+                width: 100%;
+                padding: 16px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .container {
+                padding: 20px;
+            }
+            
+            .song-card {
+                padding: 25px;
+            }
+            
+            .song-title {
+                font-size: 24px;
+            }
+            
+            .song-artist {
+                font-size: 16px;
+            }
+            
+            .meta-item {
+                font-size: 14px;
+            }
+            
+            .details-title, .lyrics-title {
+                font-size: 20px;
+            }
+            
+            .lyrics-content {
+                padding: 20px;
+                font-size: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="song-card">
+            <div class="song-header">
+                <img src="https://upload.wikimedia.org/wikipedia/en/b/b1/Derniere_danse_cover.png" 
+                     alt="Indila - Dernière Danse Cover Art" 
+                     class="song-cover">
+                
+                <div class="song-info">
+                    <h1 class="song-title">Dernière Danse - download</h1>
+                    <p class="song-artist">Indila</p>
+                    
+                    <div class="song-meta">
+                        <div class="meta-item">
+                            <i class="fas fa-calendar-alt"></i>
+                            <span>Released: Dec 13, 2013</span>
+                        </div>
+                        <div class="meta-item">
+                            <i class="fas fa-clock"></i>
+                            <span>Duration: 3:33</span>
+                        </div>
+                        <div class="meta-item">
+                            <i class="fas fa-music"></i>
+                            <span>Genre: French Pop</span>
+                        </div>
+                        <div class="meta-item">
+                            <i class="fas fa-download"></i>
+                            <span>Downloads: 2.4M+</span>
+                        </div>
+                    </div>
+                    
+                    <div class="audio-preview">
+                        <audio controls>
+                            <source src="songs/Derniere-Danse.mp3" type="audio/mpeg">
+                            Your browser does not support audio preview.
+                        </audio>
+                        <p style="text-align: center; margin-top: 10px; color: var(--text); font-size: 14px;">
+                            <i class="fas fa-headphones"></i> 30-second preview
+                        </p>
+                    </div>
+                    
+                 <a href="songs/Derniere-Danse.mp3" download class="download-btn">
+    <i class="fas fa-download"></i> Download MP3 (320kbps)
+</a>
+
+                </div>
+            </div>
+            
+            <div class="song-details">
+                <h2 class="details-title">
+                    <i class="fas fa-info-circle"></i>
+                    Song Details
+                </h2>
+                
+                <div class="details-grid">
+                    <div class="detail-item">
+                        <div class="detail-label">Album</div>
+                        <div class="detail-value">Mini World</div>
+                    </div>
+                    <div class="detail-item">
+                        <div class="detail-label">Release Date</div>
+                        <div class="detail-value">December 13, 2013</div>
+                    </div>
+                    <div class="detail-item">
+                        <div class="detail-label">Genre</div>
+                        <div class="detail-value">French Pop, World Music</div>
+                    </div>
+                    <div class="detail-item">
+                        <div class="detail-label">Duration</div>
+                        <div class="detail-value">3 minutes 33 seconds</div>
+                    </div>
+                    <div class="detail-item">
+                        <div class="detail-label">Bitrate</div>
+                        <div class="detail-value">320 kbps (High Quality)</div>
+                    </div>
+                    <div class="detail-item">
+                        <div class="detail-label">File Size</div>
+                        <div class="detail-value">8.2 MB</div>
+                    </div>
+                    <div class="detail-item">
+                        <div class="detail-label">Language</div>
+                        <div class="detail-value">French</div>
+                    </div>
+                    <div class="detail-item">
+                        <div class="detail-label">Label</div>
+                        <div class="detail-value">Universal Music France</div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="lyrics-section">
+                <h2 class="lyrics-title">
+                    <i class="fas fa-align-left"></i>
+                    Lyrics
+                </h2>
+                
+                <div class="lyrics-content">
+                    [Verse 1]
+                    Je remue le ciel, le jour, la nuit
+                    Je danse avec le vent, la pluie
+                    Un peu d'amour, un brin de miel
+                    Et je danse, danse, danse, danse, danse, danse, danse
+                    
+                    [Chorus]
+                    Et dans le bruit, je cours et j'ai peur
+                    Est-ce mon tour? Vient la douleur
+                    Dans tout Paris, je m'abandonne
+                    Et je m'envole, vole, vole, vole, vole, vole
+                    
+                    [Verse 2]
+                    Que d'espace entre nous
+                    À quoi bon tu pars, si c'est pour revenir?
+                    Pourquoi tu me fais ça?
+                    Pourquoi tu m'fais ça, bébé?
+                    Dis-moi, pourquoi tu m'fais ça?
+                    J'ai cru que tu m'aimais, moi
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <footer>
+        <p>© 2023 Cartunes • Premium Music Downloads</p>
+    </footer>
+
+    <script>
+        function downloadSong() {
+            // In a real implementation, this would track the download
+            console.log("Downloading: Indila - Dernière Danse (320kbps).mp3");
+            
+            // Simulate download (replace with actual file download)
+            const link = document.createElement('a');
+            link.href = '';
+            link.download = 'songs/Derniere-Danse.mp3';
+            document.body.appendChild(link);
+            link.click();
+            document.body.removeChild(link);
+            
+            // Optional: Track download in your analytics
+            // fetch('/track-download', { method: 'POST', body: JSON.stringify({ songId: '123' }) });
+        }
+        
+        // Set audio volume to 50% on load
+        document.addEventListener('DOMContentLoaded', function() {
+            const audioPlayer = document.querySelector('audio');
+            if (audioPlayer) {
+                audioPlayer.volume = 0.5;
+            }
+        });
+    </script>
+</body>
+</html>
